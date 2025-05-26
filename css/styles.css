@@ -97,13 +97,17 @@ nav a {
     display: block;
 }
 
+h1 {
+    font-size: 2.3rem;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
 
 
 /* BODY  */
 
-h1 {
-    font-size: 2.3rem;
-}
+
 
 h2 {
     font-size: 1.8rem;
@@ -116,6 +120,14 @@ img {
     width: 100%;
     border-radius: 5px;
     display: block;
+}
+
+p {
+    padding: 3px 5%;
+}
+
+figcaption {
+    padding-top: 5px;
 }
 
 
@@ -132,24 +144,27 @@ footer {
 }
 
 .twdev {
-    padding-top: 5px;
+    padding: 5px 0 15px 0;
     display: flex;
     justify-content: center;
 }
 
 .socials {
+    padding-top: 0.4rem;
     display: flex;
     justify-content: flex-start;
     gap: 20px;
 }
 
 h4 {
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 15px;
 
 }
 
 .info {
     padding-bottom: 15px;
+    display: inline-block;
+
 }
 
 .socials li:first-child {
