@@ -91,10 +91,10 @@ nav a {
 /* HEADER  */
 
 #header-img {
-    height: 100vw;
+    height: 170vw;
     width: 100%;
     border-radius: 2px;
-     display: block;
+    display: block;
 }
 
 
@@ -112,7 +112,7 @@ h2 {
 }
 
 img {
-    height: 65vw;
+    height: 130vw;
     width: 100%;
     border-radius: 5px;
     display: block;
@@ -129,4 +129,29 @@ footer {
 .footer-img {
     width: 50px;
     height: 50px;
+}
+
+.twdev {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+h4 {
+    padding: 10px 0 0 10px;
+
+}
+
+.info {
+    padding-bottom: 15px;
+}
+
+.socials li:first-child {
+    padding-left: 15px;
 }
