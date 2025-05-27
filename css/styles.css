@@ -345,6 +345,6 @@ input:focus {
    font-size: larger;
    z-index: 5;
    background-color: white;
-   padding-left: 2px;
+   padding-left: 4px;
    color: #DAA520;
 }
