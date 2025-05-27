@@ -1,5 +1,6 @@
 
  /* GLOBAL STYLES  */
+
 *, *:before, *:after{
     box-sizing: inherit;
 }
@@ -25,24 +26,19 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: black
 }
 figcaption {
     font-style: italic;
     font-size: 0.8rem;
     text-wrap: balance;
 }
-h1 {
-    text-wrap: balance;
-}
+
 
 h1, h2, figcaption {
     text-align: center;
 }
 
-p {
-    padding: 0 5px 0 10px;
-}
 
 
 
@@ -101,6 +97,7 @@ h1 {
     font-size: 2.3rem;
     margin-top: 10px;
     margin-bottom: 7px;
+        text-wrap: balance;
 }
 
 
@@ -121,6 +118,7 @@ img {
     border-radius: 5px;
     display: block;
 }
+
 
 p {
     padding: 3px 5%;
@@ -170,3 +168,128 @@ h4 {
 .socials li:first-child {
     padding-left: 15px;
 }
+
+/* LOGIN SECTION */
+#loginForm { 
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1000; */
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#loginForm.active { 
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.login-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+/* LINKS */
+.login-form a {
+    color:#E0A500;
+}
+
+.login-form h3 {
+    padding-bottom: 7%;
+    font-size: xx-large;
+}
+
+/* BUTTON  */
+.login-form .btn {
+    gap: 10px;
+    background: linear-gradient(to right, #DAA520, #FFD700);
+    color: #333;
+    padding: 12px 25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-form .btn:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    color: #000;
+}
+
+.login-form .btn:active {
+    transform: translateY(0);
+}
+
+/* CLOSE ICON - not needed but for better UI  */
+
+#form-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px; 
+    color: #fd0000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* INPUTS  */
+
+
+input {
+    width: 100%;
+    height: 50px; 
+    padding: 12px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    font-size: 1.6rem; 
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #DAA520; /
+    box-shadow: 0 4px 10px rgba(218, 165, 32, 0.2); 
+}
+
+/* FACEBOOK/GOOGLE - must be  */
+
+.fb-login, .google-login {
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#fblogin {
+    background: #1877F2;
+    color: white;
+}
+
+#googlelogin {
+    background: #DB4437;
+    color: white;
+
+}
+
+
+
+
