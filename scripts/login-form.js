@@ -1,3 +1,4 @@
+// changed for register script for both login and register sections not needed not 
 document.addEventListener('DOMContentLoaded', () => {
     const loginBtn = document.querySelector('#login-btn');
     const loginFormContainer = document.querySelector('#loginForm');
