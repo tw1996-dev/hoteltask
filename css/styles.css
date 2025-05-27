@@ -221,6 +221,7 @@ h4 {
    text-align: center;
    position: relative;
    height: 80%;
+   overflow-y: auto;
    display: flex;
    flex-direction: column;
    gap: 2%;
