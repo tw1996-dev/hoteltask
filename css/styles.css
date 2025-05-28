@@ -34,37 +34,28 @@ figcaption {
     text-wrap: balance;
 }
 
-
 h1, h2, figcaption {
     text-align: center;
 }
 
 
-
-
 /* NAVIGATION */
 
-@keyframes shimmer {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+
+#main-nav {
+    position: fixed;
 }
 
 nav {
 width: 100%;
-position: fixed;
+z-index: 3;
 }
-
 
 nav ul {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(120deg, #f8e6c1, #f7dba7, #f4c27e);
-    background-size: 300% 300%;
-    animation: shimmer 3s infinite linear;
+    background: linear-gradient(360deg, #f8e6c1, #f7dba7, #f4c27e);
     color: #6d4c1c; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 nav li {
@@ -80,8 +71,17 @@ nav a {
     box-shadow:1px 4px 4px rgb(34, 33, 33);
     font-weight: 900;
     font-size:1.2rem ;
-
 }
+
+@media (max-width: 300px) {
+    nav a {
+        font-size: 0.8rem; 
+        padding: 10px 0; 
+        border-width: 0.5px;
+    }
+}
+
+
 
 
 /* HEADER  */
@@ -104,12 +104,13 @@ h1 {
 
 /* BODY  */
 
-
+#bodyy {
+    background: #000;
+}
 
 h2 {
     font-size: 1.8rem;
     margin: 20px 0 10px 0;
-
 }
 
 img {
@@ -129,7 +130,10 @@ figcaption {
 }
 
 
+
+
 /* footer  */
+
 
 footer {
     background-color: #d4b378;
@@ -169,75 +173,44 @@ h4 {
     padding-left: 15px;
 }
 
+
+
 /* LOGIN/REGISTER SECTIONS  */
 
-/* LOGIN SECTION */
 
-#loginForm { 
-   position: fixed;
-   top: -50px; left: 0; right: 0; bottom: 0;
-   background: rgba(0,0,0,0.7);
+#loginForm ,#registerForm { 
    display: flex;
-   align-items: center;
    justify-content: center;
-   opacity: 0;
-   pointer-events: none;
-   transform: scale(0.8);
-   transition: opacity 0.3s ease, transform 0.3s ease;
+   padding: 2rem 0;
+
 }
 
-#loginForm.active { 
-   opacity: 1;
-   pointer-events: auto;
-   transform: scale(1);
-}
-
-/* REGISTER SECTION */
-
-#registerForm { 
-   position: fixed;
-   top: -50px; left: 0; right: 0; bottom: 0;
-   background: rgba(0,0,0,0.7);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   opacity: 0;
-   pointer-events: none;
-   transform: scale(0.8);
-   transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#registerForm.active { 
-   opacity: 1;
-   pointer-events: auto;
-   transform: scale(1);
-}
-
-.login-form, .register-form {
+.login-form,.register-form {
    background: linear-gradient(to bottom, #f0f0f0, #d9d9d9);
    border-radius: 10px;
    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
    width: 90%;
    text-align: center;
-   position: relative;
    display: flex;
    flex-direction: column;
-   gap: 2%;
    max-width: 700px;
-   height: 84%;
- 
+   gap: 10px;
 
 }
 
-/* LOGIN Header */
 
+
+aside {
+    padding-bottom: 15px;
+}
+
+/* Forms header */
 article h3 {
    padding-top: 20px;
    padding-bottom: 4%;
    width: 100%;
    border-radius: 10px 10px 0 0;
    background: linear-gradient(120deg, #b3882a, #ffd700, #b3882a);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
    font-weight: bold;
    font-size: xx-large;
 }
@@ -249,15 +222,12 @@ article h3 {
 
 /* BUTTON  */
 .login-form .btn, .register-form .btn {
-   gap: 10px;
    background: linear-gradient(to right, #DAA520, #FFD700);
-   color: #333;
    padding: 12px 25px;
    font-size: 1.6rem;
    font-weight: bold;
    border-radius: 6px;
    cursor: pointer;
-   transition: 0.3s ease;
    margin: 0 auto;
    width: 100%;
    max-width: 263px;
@@ -273,17 +243,6 @@ article h3 {
    transform: translateY(0);
 }
 
-/* CLOSE ICON  */
-
-#form-close, #register-close {
-   position: absolute;
-   top: 10px;
-   right: 15px;
-   font-size: 24px; 
-   color: #fd0000;
-   cursor: pointer;
-   transition: color 0.3s ease;
-}
 
 /* INPUTS  */
 
@@ -294,8 +253,6 @@ input {
    border: 2px solid #ccc; 
    border-radius: 10px; 
    font-size: 1.2rem; 
-   outline: none;
-   transition: all 0.3s ease-in-out;
    max-width: 263px;
    margin: 0 auto;
 }

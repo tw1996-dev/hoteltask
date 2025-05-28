@@ -54,17 +54,13 @@
 
 
 
-
-
-
 <!----------------- BODY  ------------->
 
 
 <body>
 
     <!----------------- NAVIGATION------------------ -->
-
-    <nav>
+    <nav id="main-nav">
         <ul class="navi">
             <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="booking.html" target="_blank"><i class="fas fa-calendar-check"></i> Book</a></li>
@@ -72,76 +68,12 @@
         </ul>
     </nav>
 
-    <!-- LOGIN Section  -->
-    <article id="loginForm">
 
-        <form action="login-form.html" class="login-form" method="POST">
-            <i class="fas fa-times" id="form-close"></i>
-            <h3>Login</h3>
-
-            <label for="login-username"><i class="fas fa-user"></i> Username</label>
-            <input type="text" id="login-username" name="username" class="box" required>
-
-            <label for="email"><i class="fas fa-envelope"></i> Email</label>
-            <input type="email" id="email" name="email" class="box" required>
-
-            <label for="password"><i class="fas fa-lock"></i> Password</label>
-            <div class="password-wrapper">
-                <input type="password" id="password" name="password" class="box" required>
-                <i class="fas fa-eye" id="togglePassword"></i>
-            </div>
-
-            <button type="submit" id="loginbtn" class="btn">Login</button>
-            <a href="#" id="fblogin" class="fb-login">
-                <i class="fab fa-facebook"></i> Login with Facebook
-            </a>
-
-            <a href="#" id="googlelogin" class="google-login">
-                <i class="fab fa-google"></i> Login with Google
-            </a>
-
-            <aside>
-                <small><a href="#" class="login-link">Forgot your password?</a> <br> Don't have a Hotel Encryptia
-                    account?
-                    <br><a href="#" id="register-btn" class="register-link" target="_blank">Join Now</a></small>
-            </aside>
-
-        </form>
-    </article>
-
-    <!-- REGISTER-SECTION -->
-    <article id="registerForm">
-        <form action="register-form.html" class="register-form" method="POST">
-            <i class="fas fa-times" id="register-close"></i>
-            <h3>Register</h3>
-            <label for="register-username"><i class="fas fa-user"></i> Username</label>
-            <input type="text" id="register-username" name="username" class="box" required>
-
-            <label for="new-email"><i class="fas fa-envelope"></i> Email</label>
-            <input type="email" id="new-email" name="new-email" class="box" required>
-
-            <label for="new-password"><i class="fas fa-lock"></i> Password</label>
-            <div class="password-wrapper">
-                <input type="password" id="new-password" name="new-password" class="box" required>
-                <i class="fas fa-eye" id="toggleNewPassword"></i>
-            </div>
-
-            <button type="submit" id="registerbtn" class="btn">Register</button>
-
-            <p>or</p>
-            <a href="#" id="fbregister" class="fb-login">
-                <i class="fab fa-facebook"></i> Register with FB
-            </a>
-
-            <a href="#" id="googleregister" class="google-login">
-                <i class="fab fa-google"></i> Register with Google
-            </a>
-        </form>
-    </article>
 
     <!----------------- HEADER ------------------ -->
     <header>
         <img id="header-img" src="images/hotel_header_1200px.jpg" srcset="
+        images/hotel_header_2000px.jpg 2000w,
         images/hotel_header_1600px.jpg 1600w,
         images/hotel_header_1200px.jpg 1200w,
         images/hotel_header_900px.jpg 900w,
@@ -298,10 +230,6 @@
     <!-- FOOTER - Contact information and organization details -->
 
     <footer>
-
-
-
-
         <ul class="socials">
             <li><a href="https://www.facebook.com/Encryptia.no" target="_blank" rel="noopener"><img class="footer-img"
                         src="images/icon-logo-facebook.png" alt="Official Facebook page of Hotel Encryptia"></a></li>
@@ -325,9 +253,9 @@
 
 
 
-    <!-- <script src="scripts/login-form.js"></script> -->
+
     <script src="scripts/showpassword.js"></script>
-    <script src="scripts/register.js"></script>
+
 </body>
 
 </html>
