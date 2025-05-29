@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function showErrorMessage(message) {
-        alert(message); // Można zamienić na modal albo innerHTML z komunikatem
+        alert(message); 
     }
 
     usernameInput.addEventListener("input", validateUsername);
