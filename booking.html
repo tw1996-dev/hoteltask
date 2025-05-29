@@ -72,7 +72,7 @@
             <legend>Booking</legend>
 
 
-            <label for="bookingname"><i class="fas fa-user"></i>Name</label>
+            <label for="bookingname"><i class="fas fa-user"></i> Name</label>
             <input type="text" id="bookingname" name="usernamebookingname" class="box" required placeholder="Name">
 
             <label for="new-email"><i class="fas fa-envelope"></i> Email</label>
@@ -83,11 +83,20 @@
 
             <label for="checkin-date"><i class="fas fa-calendar-alt"></i> Check-in Date</label>
             <input type="date" id="checkin-date" name="checkin_date" class="box" required>
-            
+
             <label for="checkout-date"><i class="fas fa-calendar-alt"></i> Check-out Date</label>
             <input type="date" id="checkout-date" name="checkout_date" class="box" required>
 
             <p id="numberOfdays">Days:</p>
+
+            <label for="numOfGuests"><i class="fa-solid fa-users"></i> Number of Guests:</label>
+
+            <div class="stepper-container">
+            <button id="minusBtn" class="minus" type="button"><i class="fas fa-minus"></i></button>
+            <input class="stepper-control" id="numOfGuests" type="number" value="1" min="1" max="30">
+            <button id="plusBtn" class="plus" type="button"><i class="fas fa-plus"></i></button>
+            </div>
+
 
             <button type="submit" id="bookbtn" class="btn">Book</button>
 
@@ -123,6 +132,7 @@
     <!-- <script src="scripts/passvalidation.js"></script>  -->
     <!-- <script src="scripts/registerhints.js"></script> -->
     <script src="scripts/datesvalidation.js"></script>
+    <script src="scripts/stepperscript.js"></script>
 
 
 
