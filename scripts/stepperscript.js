@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const guestInput = document.getElementById('numOfGuests');
 
     const minGuests = parseInt(guestInput.min) || 1;
-    const maxGuests = parseInt(guestInput.max) || 30;
+    const maxGuests = parseInt(guestInput.max) || 6;
 
     let pressTimer;
     let intervalTimer;
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentValue < maxGuests) {
             guestInput.value = currentValue + 1;
         } else if (currentValue === maxGuests) {
-            alert('For more than 30 guests, please contact us by phone to discuss appropriate discounts.');
+            alert('For more than 6 guests, please contact us by phone to discuss appropriate discounts.');
             stopAutoChange();
         }
     }
