@@ -623,7 +623,7 @@ tbody tr {
 
 
 .table-included {
-    text-align: center;
+    /* text-align: center; */
     color: #27ae60;
 }
 
@@ -698,9 +698,7 @@ tbody tr {
     }
 
     .table-item {
-        padding: 2px 0;
-        padding-left: 15px;
-        font-size: 0.85em;
+        font-size: 0.9em;
     }
 
     .price-cell {
@@ -710,5 +708,22 @@ tbody tr {
     table.ul {
         margin: 0;
         padding: 0;
+    }
+}
+
+@media (max-width: 299px){
+        .tablescroll th:first-child,
+
+    .tablescroll thead tr td:first-child {
+        display: none;
+    }
+
+    .tablescroll th:nth-child(2),
+    .tablescroll td:nth-child(2),
+    .tablescroll th:nth-child(3),
+    .tablescroll td:nth-child(3),
+    .tablescroll th:nth-child(4),
+    .tablescroll td:nth-child(4) {
+        width: 33.33%;
     }
 }
