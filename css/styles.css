@@ -16,7 +16,7 @@
 
 /* Scroll Anchoring problem fix */
 html {
-  overflow-anchor: none;
+    overflow-anchor: none;
 }
 
 em {
@@ -100,31 +100,30 @@ nav a {
 
 
 .header-content {
-    max-width: 700px; 
-    margin: 20px auto; 
+    max-width: 700px;
+    margin: 20px auto;
 }
 
 /*  H1 */
 h1 {
-
-    font-size: 3rem; 
-    color: #1e1e1e; 
+    font-size: 3.3rem;
+    color: #1e1e1e;
     text-wrap: balance;
     margin-bottom: 7px;
 }
 
-/* Style (blockquote) */
-.header-content blockquote {
-    font-size: 1.4em; 
-    font-style: italic; 
-    color: #e70c0c; /* Temporary */
+.header-content p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.4em;
     margin-top: 1em;
-    padding: 20px 30px; 
-    border: 1px solid rgba(212, 179, 120, 0.4); 
-    background-color: #fcfaf7; 
-    border-radius: 5px; 
-    line-height: 1.6; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+    padding: 20px 30px;
+    border: 1px solid rgba(212, 179, 120, 0.4);
+    background-color: #fcfaf7;
+    border-radius: 5px;
+    line-height: 1.6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -146,22 +145,24 @@ h1 {
     }
 
     section {
-    max-width: 680px;
-    align-self: center;
+        max-width: 680px;
+        align-self: center;
 
         .contentImg {
 
-        height: 500px;
-    };
-}
+            height: 500px;
+        }
 
-    #MainPageContent{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
+        ;
+    }
+
+    #MainPageContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -176,12 +177,12 @@ h1 {
 /* BODY  */
 
 #bodyy {
- background-color: #F5F5F0
+    background-color: #F5F5F0
 }
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     margin: 20px 0 10px 0;
 }
 
@@ -191,8 +192,10 @@ img {
     border-radius: 5px;
     display: block;
 }
- .contentImg {
-    padding-top: 20px;}
+
+.contentImg {
+    padding-top: 20px;
+}
 
 
 p {
@@ -247,7 +250,7 @@ h4 {
     padding-left: 15px;
 }
 
-.footer-img{
+.footer-img {
     transform 0.3s ease-in-out;
 }
 
@@ -257,7 +260,7 @@ h4 {
 
 
 .info a:hover {
-    color:  #d4b378;
+    color: #d4b378;
     background-color: black;
 
 
@@ -324,7 +327,7 @@ legend {
 .login-form .btn,
 .register-form .btn,
 .booking-form .btn {
-    background-color:  #fadd01d8;
+    background-color: #fadd01d8;
     padding: 12px 25px;
     font-size: 1.6rem;
     font-weight: bold;
@@ -405,17 +408,21 @@ input:focus {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.7);
     transition: all 0.2s ease-in-out;
 }
-#minusBtn:hover, #plusBtn:hover {
+
+#minusBtn:hover,
+#plusBtn:hover {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), -4px -4px 8px rgba(40, 40, 40, 0.6);
 
 }
 
-#minusBtn:active, #plusBtn:active {
+#minusBtn:active,
+#plusBtn:active {
     box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.7), inset -4px -4px 8px rgba(40, 40, 40, 0.6);
 
 }
 
-#minusBtn:focus, #plusBtn:focus {
+#minusBtn:focus,
+#plusBtn:focus {
 
     box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.7), inset -4px -4px 8px rgba(40, 40, 40, 0.6);
 
@@ -424,7 +431,7 @@ input:focus {
 
     outline-offset: 2px;
 
-} 
+}
 
 
 
@@ -432,8 +439,8 @@ input:focus {
 
     #minusBtn,
     #plusBtn {
-        width: 4em;
-        height: 3.5em;
+        width: 3em;
+        height: 2.7em;
         font-size: 16px;
         padding: 10px;
     }
@@ -537,4 +544,171 @@ input:focus {
     opacity: 1;
     max-height: 100px;
 
+}
+
+/* TABLE STYLES */
+
+.tablescroll {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: #F5F5F0
+}
+
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+    background: linear-gradient(120deg, #b3882a, #ffd700, #b3882a);
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0 0;
+}
+
+thead th {
+    background: #34495e;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead td {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody th {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 2px solid #ddd;
+}
+
+tbody td {
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr {
+    background-color: #e8f4f8;
+
+}
+
+
+.table-item {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+
+
+.table-included {
+    text-align: center;
+    color: #27ae60;
+}
+
+.table-noincluded {
+    text-align: center;
+    color: #95a5a6;
+    text-decoration: line-through;
+}
+
+.price-cell {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.extra-features-header {
+    background: #e9ba01;
+    color: black;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .tablescroll {
+        margin: 10px;
+    }
+
+    caption {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    th,
+    td {
+        padding: 8px 5px;
+        font-size: 0.9em;
+    }
+}
+
+
+/* MOBILE STYLING - TRYING NOT TO CHANGE TABLE STRUCTURE FOR MOBILE VIEW - JUST MAKE IT SMALLER */
+@media (max-width: 450px) {
+    .tablescroll {
+        margin: 5px 0;
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.75em;
+    }
+
+    caption {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    thead th,
+    thead td {
+        padding: 8px 4px;
+        font-size: 0.8em;
+    }
+
+    tbody th {
+        padding: 8px 4px;
+        border-right: 1px solid #ddd;
+    }
+
+    tbody td {
+        padding: 8px 4px;
+    }
+
+    .table-item {
+        padding: 2px 0;
+        padding-left: 15px;
+        font-size: 0.85em;
+    }
+
+    .price-cell {
+        font-size: 1em;
+    }
+
+    table.ul {
+        margin: 0;
+        padding: 0;
+    }
 }

@@ -58,7 +58,7 @@
     <!----------------- NAVIGATION------------------ -->
     <header>
         <nav>
-            <ul class="navi">
+            <ul class="navi" aria-label="Main navigation">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="booking.html" target="_blank"><i class="fas fa-calendar-check"></i> Book</a></li>
                 <li><a href="login.html" id="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a></li>
@@ -66,7 +66,10 @@
         </nav>
     </header>
 
-    <!-- REGISTER-SECTION -->
+
+
+
+    <!-- BOOKING-SECTION -->
     <article id="bookingForm">
         <form action="booking-form.html" class="booking-form" method="POST">
             <legend>Booking</legend>
@@ -112,6 +115,81 @@
 
         </form>
     </article>
+
+
+<!----------------- PRICE TABLE------------------ -->
+
+    <div class="tablescroll" role="region" aria-labelledby="pricelist" tabindex="0">
+        <table>
+            <caption id="pricelist">Price List (per night)</caption>
+            <thead>
+                <tr>
+                    <td>Room type</td>
+                    <th scope="col">Single-room</th>
+                    <th scope="col">Double-room</th>
+                    <th scope="col">Suite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Included</th>
+                    <td>
+                        <ul>
+                            <li class="table-included table-item">TV</li>
+                            <li class="table-included table-item">Wi-Fi</li>
+                            <li class="table-noincluded table-item">Breakfast</li>
+                            <li class="table-noincluded table-item">Gym</li>
+                            <li class="table-noincluded table-item">Spa</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="table-included table-item">TV</li>
+                            <li class="table-included table-item">Wi-Fi</li>
+                            <li class="table-included table-item">Breakfast</li>
+                            <li class="table-noincluded table-item">Gym</li>
+                            <li class="table-noincluded table-item">Spa</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li class="table-included table-item">TV</li>
+                            <li class="table-included table-item">Wi-Fi</li>
+                            <li class="table-included table-item">Breakfast</li>
+                            <li class="table-included table-item">Gym</li>
+                            <li class="table-included table-item">Spa</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Price</th>
+                    <td class="price-cell">$100</td>
+                    <td class="price-cell">$150</td>
+                    <td class="price-cell">$220</td>
+                </tr>           
+                <tr class="extra-features-header">
+                    <td colspan="2">Extra Features (if not included)</td>
+                </tr>
+                <tr class="extra-feature-row">
+                    <td>Breakfast</td>
+                    <td>$15</td>
+                    <!-- <td colspan="2"></td>         -->
+                </tr>
+                <tr class="extra-feature-row">
+                    <td>Gym</td>
+                    <td>$25</td>
+                    <!-- <td colspan="2"></td> -->
+                </tr>
+                <tr class="extra-feature-row">
+                    <td>Spa</td>
+                    <td>$40</td>
+                    <!-- <td colspan="2"></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
 
     <!-- FOOTER - Contact information and organization details -->
 
