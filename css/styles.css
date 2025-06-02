@@ -112,6 +112,13 @@ h1 {
     margin-bottom: 7px;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
 .header-content p {
     font-family: "Fira Sans", sans-serif;
     font-weight: 600;
@@ -613,6 +620,10 @@ tbody tr {
 
 }
 
+.price-cell {
+   padding-left: 25px;
+}
+
 
 .table-item {
     padding: 5px 0;
@@ -652,14 +663,12 @@ tbody tr {
     }
 
     caption {
-        font-size: 1.2em;
         padding: 10px;
     }
 
     th,
     td {
         padding: 8px 5px;
-        font-size: 0.9em;
     }
 }
 
@@ -674,17 +683,14 @@ tbody tr {
 
     table {
         width: 100%;
-        font-size: 0.75em;
     }
 
     caption {
-        font-size: 1em;
         padding: 8px;
     }
 
     thead th
         {
-        padding: 8px 4px;
         font-size: 0.8em;
     }
 
@@ -693,26 +699,22 @@ tbody tr {
         border-right: 1px solid #ddd;
     }
 
-    tbody td {
-        padding: 8px 4px;
-    }
 
     .table-item {
-        font-size: 0.9em;
+        padding-left: 0;
     }
 
     .price-cell {
         font-size: 1em;
+        padding-left: 5px;
     }
 
     table.ul {
         margin: 0;
         padding: 0;
     }
-}
 
-@media (max-width: 299px){
-        .tablescroll th:first-child,
+     .tablescroll th:first-child,
 
     .tablescroll thead tr td:first-child {
         display: none;
@@ -725,5 +727,18 @@ tbody tr {
     .tablescroll th:nth-child(4),
     .tablescroll td:nth-child(4) {
         width: 33.33%;
+    }
+}
+
+@media (max-width: 299px){
+    caption {
+        font-size: 1.2rem;
+    }
+
+    .table-item {
+        font-size: 0.8rem;
+    }
+    tbody td {
+        padding: 10px 5px;
     }
 }
