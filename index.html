@@ -72,14 +72,25 @@
 
     <!----------------- HEADER ------------------ -->
     <header id="mainPageHeader">
+
+
         <picture>
             <source type="image/webp" srcset="
-      images/hotel_header_2000px.webp 2000w,
-      images/hotel_header_1600px.webp 1600w,
-      images/hotel_header_1200px.webp 1200w,
-      images/hotel_header_900px.webp 900w,
-      images/hotel_header_600px.webp 600w,
-      images/hotel_header_400px.webp 400w" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px">
+        images/hotel_header_2000px.webp 2000w,
+        images/hotel_header_1600px.webp 1600w,
+        images/hotel_header_1200px.webp 1200w,
+        images/hotel_header_960px.webp 960w,
+        images/hotel_header_640px.webp 640w,
+        images/hotel_header_320px.webp 320w" sizes="100vw">
+
+            <source type="image/png" srcset="
+        images/hotel_header_2000px.png 2000w,
+        images/hotel_header_1600px.png 1600w,
+        images/hotel_header_1200px.png 1200w,
+        images/hotel_header_960px.png 960w,
+        images/hotel_header_640px.png 640w,
+        images/hotel_header_320px.png 320w" sizes="100vw">
+
             <img id="header-img" src="images/hotel_header_1200px.png" alt="Encryptia Hotel Header" width="1200"
                 height="800">
         </picture>
@@ -106,15 +117,19 @@
             <figure>
                 <picture>
                     <source type="image/webp" srcset="
-                images/hotel_room_600px.webp 600w,
-                images/hotel_room_400px.webp 400w,
-                images/hotel_room_200px.webp 200w" sizes="(max-width: 600px) 100vw, 600px">
-                    <source type="image/png" srcset="
-                images/hotel_room_600px.png 600w,
-                images/hotel_room_400px.png 400w,
-                images/hotel_room_200px.png 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_room_1200px.webp 1200w,
+        images/hotel_room_960px.webp 960w,
+        images/hotel_room_640px.webp 640w,
+        images/hotel_room_320px.webp 320w" sizes="100vw">
 
-                    <img class="contentImg" src="images/hotel_room_600px.png" alt="Hotel room" width="600" height="400">
+                    <source type="image/png" srcset="
+        images/hotel_room_1200px.png 1200w,
+        images/hotel_room_960px.png 960w,
+        images/hotel_room_640px.png 640w,
+        images/hotel_room_320px.png 320w" sizes="100vw">
+
+                    <img class="contentImg" src="images/hotel_room_1200px.png" alt="Hotel room" width="1200"
+                        height="800">
                 </picture>
                 <figcaption>
                     An elegant hotel room combining comfort and refined style.
@@ -136,17 +151,19 @@
             <figure>
                 <picture>
                     <source type="image/webp" srcset="
-                images/hotel_toilet_600px.webp 600w,
-                images/hotel_toilet_400px.webp 400w,
-                images/hotel_toilet_200px.webp 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_toilet_1200px.webp 1200w,
+        images/hotel_toilet_960px.webp 960w,
+        images/hotel_toilet_640px.webp 640w,
+        images/hotel_toilet_320px.webp 320w" sizes="100vw">
 
                     <source type="image/png" srcset="
-                images/hotel_toilet_600px.png 600w,
-                images/hotel_toilet_400px.png 400w,
-                images/hotel_toilet_200px.png 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_toilet_1200px.png 1200w,
+        images/hotel_toilet_960px.png 960w,
+        images/hotel_toilet_640px.png 640w,
+        images/hotel_toilet_320px.png 320w" sizes="100vw">
 
-                    <img class="contentImg" src="images/hotel_toilet_600px.png" alt="Modern bathrooms" width="600"
-                        height="400">
+                    <img class="contentImg" src="images/hotel_toilet_1200px.png" alt="Modern bathrooms" width="1200"
+                        height="800">
                 </picture>
                 <figcaption>
                     Elegant bathrooms designed for relaxation, sophistication, and pristine comfort.
@@ -168,17 +185,19 @@
             <figure>
                 <picture>
                     <source type="image/webp" srcset="
-                images/hotel_food_600px.webp 600w,
-                images/hotel_food_400px.webp 400w,
-                images/hotel_food_200px.webp 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_food_1200px.webp 1200w,
+        images/hotel_food_960px.webp 960w,
+        images/hotel_food_640px.webp 640w,
+        images/hotel_food_320px.webp 320w" sizes="100vw">
 
                     <source type="image/png" srcset="
-                images/hotel_food_600px.png 600w,
-                images/hotel_food_400px.png 400w,
-                images/hotel_food_200px.png 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_food_1200px.png 1200w,
+        images/hotel_food_960px.png 960w,
+        images/hotel_food_640px.png 640w,
+        images/hotel_food_320px.png 320w" sizes="100vw">
 
-                    <img class="contentImg" src="images/hotel_food_600px.png" alt="Exquisite food" width="600"
-                        height="400">
+                    <img class="contentImg" src="images/hotel_food_1200px.png" alt="Exquisite food" width="1200"
+                        height="800">
                 </picture>
                 <figcaption>
                     Gourmet dishes crafted to delight the senses with every bite.
@@ -204,16 +223,18 @@
             <figure>
                 <picture>
                     <source type="image/webp" srcset="
-                images/hotel_spa_600px.webp 600w,
-                images/hotel_spa_400px.webp 400w,
-                images/hotel_spa_200px.webp 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_spa_1200px.webp 1200w,
+        images/hotel_spa_960px.webp 960w,
+        images/hotel_spa_640px.webp 640w,
+        images/hotel_spa_320px.webp 320w" sizes="100vw">
 
                     <source type="image/png" srcset="
-                images/hotel_spa_600px.png 600w,
-                images/hotel_spa_400px.png 400w,
-                images/hotel_spa_200px.png 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_spa_1200px.png 1200w,
+        images/hotel_spa_960px.png 960w,
+        images/hotel_spa_640px.png 640w,
+        images/hotel_spa_320px.png 320w" sizes="100vw">
 
-                    <img class="contentImg" src="images/hotel_spa_600px.png" alt="SPA area" width="600" height="400">
+                    <img class="contentImg" src="images/hotel_spa_1200px.png" alt="SPA area" width="1200" height="800">
                 </picture>
                 <figcaption>
                     A tranquil spa retreat designed for ultimate relaxation and renewal.
@@ -238,16 +259,18 @@
             <figure>
                 <picture>
                     <source type="image/webp" srcset="
-                images/hotel_gym_600px.webp 600w,
-                images/hotel_gym_400px.webp 400w,
-                images/hotel_gym_200px.webp 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_gym_1200px.webp 1200w,
+        images/hotel_gym_960px.webp 960w,
+        images/hotel_gym_640px.webp 640w,
+        images/hotel_gym_320px.webp 320w" sizes="100vw">
 
                     <source type="image/png" srcset="
-                images/hotel_gym_600px.png 600w,
-                images/hotel_gym_400px.png 400w,
-                images/hotel_gym_200px.png 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_gym_1200px.png 1200w,
+        images/hotel_gym_960px.png 960w,
+        images/hotel_gym_640px.png 640w,
+        images/hotel_gym_320px.png 320w" sizes="100vw">
 
-                    <img class="contentImg" src="images/hotel_gym_600px.png" alt="Hotel gym" width="600" height="400">
+                    <img class="contentImg" src="images/hotel_gym_1200px.png" alt="Hotel gym" width="1200" height="800">
                 </picture>
                 <figcaption>
                     A gym designed for peak performance, strength, and ultimate wellness.
@@ -271,17 +294,19 @@
             <figure>
                 <picture>
                     <source type="image/webp" srcset="
-                images/hotel_people_600px.webp 600w,
-                images/hotel_people_400px.webp 400w,
-                images/hotel_people_200px.webp 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_people_1200px.webp 1200w,
+        images/hotel_people_960px.webp 960w,
+        images/hotel_people_640px.webp 640w,
+        images/hotel_people_320px.webp 320w" sizes="100vw">
 
                     <source type="image/png" srcset="
-                images/hotel_people_600px.png 600w,
-                images/hotel_people_400px.png 400w,
-                images/hotel_people_200px.png 200w" sizes="(max-width: 600px) 100vw, 600px">
+        images/hotel_people_1200px.png 1200w,
+        images/hotel_people_960px.png 960w,
+        images/hotel_people_640px.png 640w,
+        images/hotel_people_320px.png 320w" sizes="100vw">
 
-                    <img class="contentImg" src="images/hotel_people_600px.png" alt="Hotel service" width="600"
-                        height="400">
+                    <img class="contentImg" src="images/hotel_people_1200px.png" alt="Hotel service" width="1200"
+                        height="800">
                 </picture>
                 <figcaption>
                     Exceptional service tailored to meet your every need with care and precision.
