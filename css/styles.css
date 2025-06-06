@@ -133,7 +133,7 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-
+mainPageHeader
 
 
 #header-img {
@@ -172,7 +172,16 @@ h1 {
     }
 }
 
+@media (min-width: 1024px) { 
+    #header-img {
+        width: 75%; 
+        height: auto; 
+        max-height: 900px;
+        display: block;
+        margin: 0 auto;
+    }
 
+}
 
 
 
