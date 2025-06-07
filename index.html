@@ -45,8 +45,55 @@
 
 
     <!-- FONTS/ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.onload=null;this.media='all';" crossorigin>
+<noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</noscript>
 
+
+
+<!-- JSON LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hotel Encryptia",
+  "description": "Experience unparalleled luxury and comfort at Hotel Encryptia. Discover our opulent rooms, world-class dining, rejuvenating SPA, bespoke services, state-of-the-art bathrooms, and high-end fitness facilities. Designed for the discerning traveler seeking excellence and a truly memorable stay.",
+  "url": "https://www.hotelencryptia.com/index.html",
+  "image": "https://www.hotelencryptia.com/images/hotel_header_1200px.png",
+  "priceRange": "$$$",
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "5"
+  },
+  "checkinTime": "00:00",
+  "checkoutTime": "24:00",
+  "openingHours": "Mo-Su 00:00-24:00",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Random Street",
+    "addressLocality": "Cityville",
+    "postalCode": "56789",
+    "addressCountry": "NO"
+  },
+  "telephone": "+123456789",
+  "email": "mailto:hotel@encryptia.com",
+  "sameAs": [
+    "https://www.facebook.com/Encryptia.no",
+    "https://www.instagram.com/encryptiacity/"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Hotel Encryptia"
+  }
+}
+</script>
 
 </head>
 
@@ -330,7 +377,7 @@
             </li>
         </ul>
         <div class="info">
-            <h4><a href="index.html" target="_blank" aria-label="Visit Hotel Encryptia website">Hotel Encryptia</a></h4>
+            <h3><a href="index.html" target="_blank" aria-label="Visit Hotel Encryptia website">Hotel Encryptia</a></h3>
             <address>
                 <p><a href="https://maps.app.goo.gl/N1yk9tjrYiweEcn56" target="_blank" rel="noopener">🗺️ 123 Random
                         Street,
